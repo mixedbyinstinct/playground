@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import axios from 'axios';
@@ -87,6 +87,11 @@ margin-top: 15vh;
 & p {
     text-align: center;
 }
+& video {
+    height: 40vh;
+    width: 75vw;
+    margin-top: 5vh;
+}
 `;
 
 const Button = styled.button`
@@ -102,17 +107,24 @@ padding: 8px;
 `;
 
 const App = () => {
+    const [vid, setVid] = useState(null);
+    const [show, setShow] = useState(false);
+    function go() {
+        axios.get('https://api.nasa.gov/planetary/apod?api-key=DEMO_KEY').then(({data}) => {
+             setVid(data.url);
+             setShow(true);
+        });
+    }
   return (
     <>
     <GlobalStyles />
     <Jumbotron>
-        <h1>Artworks</h1>
+        <h1>NASA shit</h1>
     </Jumbotron>
     <Container>
-    <p>Enter a topic and see if the art institute of chicago has any artworks related to it</p>
-    <label>Topic:</label>
-    <input type="text" />
-    <Button>Search</Button>
+    <p>get some NASA shit</p>
+    <Button onClick={go}>Search</Button>
+    {show ? <video src={vid} controls /> : <div />}
     </Container>
     </>
   );

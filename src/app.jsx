@@ -121,7 +121,7 @@ const App = () => {
     const [show, setShow] = useState(false);
     function go() {
         axios.get("http://boredapi.com/api/activity").then(({data}) => {
-             setWhat(data.activity);
+             setWhat(data);
              setShow(true);
         });
     }

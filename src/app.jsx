@@ -36,7 +36,7 @@ body {
 `;
 
 const Jumbotron = styled.header`
-height: 10vh;
+height: 7vh;
 width: 100%;
 position: absolute;
 top: 0;

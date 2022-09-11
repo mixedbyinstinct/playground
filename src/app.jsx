@@ -67,8 +67,6 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 margin-top: 15vh;
-border-radius: 2px;
-border: 0.8px inset #fffcf7;
 & label {
   font-family: 'text';
   font-size: 14px;
@@ -86,9 +84,7 @@ border: 0.8px inset #fffcf7;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
 }
-height: 100vh;
-width: 100vw;
-filter: drop-shadow(2px 2px 8px #001a17);
+box-shadow: 0 0 8px inset #191712;
 & p {
     text-align: center;
 }

@@ -56,7 +56,6 @@ background-color: #92de8b;
   animation: zoomInUp 1s;
 }
 filter: drop-shadow(0 3px 5px #001a17);
-z-index: 6;
 margin-bottom: 20vh;
 `;
 
@@ -70,7 +69,6 @@ justify-content: center;
   font-family: 'text';
   font-size: 14px;
   color: #000d0c;
-  margin-bottom: 5vh;
 }
 & input[type="text"] {
   background-color: #fff7e8;

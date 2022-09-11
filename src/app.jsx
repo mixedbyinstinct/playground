@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle }from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import axios from 'axios';
 import heading from './Syne-ExtraBold.ttf';
 import text from './Barlow-Regular.otf';

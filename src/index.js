@@ -8,5 +8,5 @@ const Out = () => {
     );
 }
 
-const root = ReactDOM.createDoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Out />);

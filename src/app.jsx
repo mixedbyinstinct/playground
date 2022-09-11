@@ -134,11 +134,10 @@ const App = () => {
     <Container>
     <p>Ask the Bored API what to ddo</p>
     <Button onClick={go}>Yallah</Button>
-    {show ? <>
-    <p>you should</p>
+    {show ?
     <MessageBox>
       <h1>{what}</h1>
-      </MessageBox></> : <div />}
+      </MessageBox> : <div />}
     </Container>
     </>
   );

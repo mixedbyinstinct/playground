@@ -105,6 +105,7 @@ padding: 8px;
 const MessageBox = styled.header`
 background-color: #0ba68b;
 display: flex;
+flex-flow: column nowrap;
 align-items: center;
 justify-content: center;
 color: #000d0c;
@@ -115,12 +116,17 @@ height: 200px;
 width: 75vw;
 margin-top: 10vh;
 & h1 {
+  text-align: center;
   font-family: 'heading';
   font-size: 24px;
   animation: rotateIn 2s;
 }
+& p {
+  text-align: center;
+}
+
 animation: rotateInDownLeft 1.5s;
-box-shadow: 0 0 5px inset #e7f6f3, 0 0 8px #000d0c;
+box-shadow: 0 0 10px inset #e7f6f3;
 `;
 
 const App = () => {

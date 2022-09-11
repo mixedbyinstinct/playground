@@ -105,8 +105,8 @@ const App = () => {
         <Jumbotron>
             <h1>Get Some Artworks</h1>
         </Jumbotron>
-    <p>Enter a topic and see if the art institute of chicago has any artowkrs related to it!</p>
-    <br /><label>Topic:</label>
+    <p>Enter a topic and see if the art institute of chicago has any artowkrs related to it</p>
+    <label>Topic:</label>
     <input type="text" />
     <Button>Search</Button>
     </Container>

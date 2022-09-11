@@ -102,10 +102,10 @@ const App = () => {
   return (
     <>
     <GlobalStyles />
-    <Jumbotron>
-    <h1>Get Some Artworks</h1>
-    </Jumbotron>
     <Container>
+        <Jumbotron>
+            <h1>Get Some Artworks</h1>
+        </Jumbotron>
     <p>Enter a topic and see if the art institute of chicago has any artowkrs related to it!</p>
     <br /><label>Topic:</label>
     <input type="text" />

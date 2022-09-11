@@ -87,11 +87,6 @@ margin-top: 15vh;
 & p {
     text-align: center;
 }
-& video {
-    height: 40vh;
-    width: 75vw;
-    margin-top: 5vh;
-}
 `;
 
 const Button = styled.button`
@@ -107,7 +102,7 @@ padding: 8px;
 `;
 
 const App = () => {
-    const [vid, setVid] = useState(null);
+    const [vid, setVid] = useState('');
     const [show, setShow] = useState(false);
     function go() {
         axios.get('https://api.nasa.gov/planetary/apod?api-key=OS1bLo2XfPyR3ysfMWIhtpCrLDVdO3uuHK3UHO5M').then(({data}) => {
@@ -124,7 +119,7 @@ const App = () => {
     <Container>
     <p>get some NASA shit</p>
     <Button onClick={go}>Search</Button>
-    {show ? <video src={vid} controls /> : <div />}
+    {show ? <><p>here:</p> <video src={vid} controls /></> : <div />}
     </Container>
     </>
   );

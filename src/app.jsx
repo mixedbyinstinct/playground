@@ -107,6 +107,9 @@ background-color: #0ba68b;
 color: #000d0c;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
+padding: 15px;
+height: 100px;
+width: 40vw;
 & h1 {
   font-family: 'heading';
   font-size: 24px;

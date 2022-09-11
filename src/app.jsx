@@ -112,7 +112,7 @@ color: #000d0c;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 padding: 15px;
-height: 200px;
+height: 300px;
 width: 75vw;
 margin-top: 10vh;
 & h1 {
@@ -123,6 +123,7 @@ margin-top: 10vh;
 }
 & p {
   text-align: center;
+  font-size: 20px;
 }
 
 animation: rotateInDownLeft 1.5s;
@@ -131,6 +132,7 @@ box-shadow: 0 0 10px inset #e7f6f3;
 
 const App = () => {
     const [what, setWhat] = useState('');
+    const [who, setWho] = useState('');
     const [show, setShow] = useState(false);
     function go() {
       if(show) {
@@ -138,6 +140,7 @@ const App = () => {
       }
         axios.get("http://www.boredapi.com/api/activity").then(({data}) => {
              setWhat(data.activity);
+             setWho(data.participants);
              setShow(true);
         });
     }
@@ -154,6 +157,8 @@ const App = () => {
     <MessageBox>
       <p>you should</p>
       <h1>{what}</h1>
+      <p>you gon need</p>
+      <h1>{who} people</h1>
       </MessageBox> : <div />}
     </Container>
     </>

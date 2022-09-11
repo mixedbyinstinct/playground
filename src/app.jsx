@@ -120,7 +120,7 @@ margin-top: 10vh;
   animation: rotateIn 2s;
 }
 animation: rotateInDownLeft 1.5s;
-box-shadow: 0 0 5px inset #e7f6f3 0 0 8px #000d0c;
+box-shadow: 0 0 5px inset #e7f6f3, 0 0 8px #000d0c;
 `;
 
 const App = () => {
@@ -143,6 +143,7 @@ const App = () => {
     <Button onClick={go}>Yallah</Button>
     {show ?
     <MessageBox>
+      <p>you should</p>
       <h1>{what}</h1>
       </MessageBox> : <div />}
     </Container>

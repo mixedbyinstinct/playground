@@ -63,9 +63,10 @@ margin-bottom: 20vh;
 const Container = styled.div`
 display: flex;
 flex-flow: column nowrap;
-flex-grow: 1;
 align-items: center;
 justify-content: center;
+padding: 10px;
+margin-top: 15vh;
 & label {
   font-family: 'text';
   font-size: 14px;
@@ -101,10 +102,10 @@ const App = () => {
   return (
     <>
     <GlobalStyles />
+    <Jumbotron>
+        <h1>Artworks</h1>
+    </Jumbotron>
     <Container>
-        <Jumbotron>
-            <h1>Get Some Artworks</h1>
-        </Jumbotron>
     <p>Enter a topic and see if the art institute of chicago has any artowkrs related to it</p>
     <label>Topic:</label>
     <input type="text" />

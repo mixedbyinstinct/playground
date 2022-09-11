@@ -104,6 +104,9 @@ padding: 8px;
 
 const MessageBox = styled.header`
 background-color: #0ba68b;
+display: flex;
+align-items: center;
+justify-content: center;
 color: #000d0c;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;

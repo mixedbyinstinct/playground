@@ -31,6 +31,7 @@ body {
   & p {
     font-family: 'text';
     color: #000d0c;
+    font-size: 18px;
   }
 }
 `;
@@ -81,9 +82,6 @@ justify-content: center;
   margin-bottom: 5vh;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
-}
-& p {
-    margin-top: 5vh;
 }
 `;
 

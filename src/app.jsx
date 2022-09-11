@@ -108,15 +108,16 @@ color: #000d0c;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 padding: 15px;
-height: 400px;
+height: 200px;
 width: 75vw;
+margin-top: 10vh;
 & h1 {
   font-family: 'heading';
   font-size: 24px;
   animation: rotateIn 2s;
 }
 animation: rotateInDownLeft 1.5s;
-box-shadow: 0 0 5px inset #e7f6f3;
+box-shadow: 0 0 5px inset #e7f6f3 0 0 8px #000d0c;
 `;
 
 const App = () => {

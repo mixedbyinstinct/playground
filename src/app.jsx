@@ -67,6 +67,8 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 margin-top: 15vh;
+border-radius: 2px;
+border: 0.8px inset #fffcf7;
 & label {
   font-family: 'text';
   font-size: 14px;
@@ -106,7 +108,7 @@ const App = () => {
         <h1>Artworks</h1>
     </Jumbotron>
     <Container>
-    <p>Enter a topic and see if the art institute of chicago has any artowkrs related to it</p>
+    <p>Enter a topic and see if the art institute of chicago has any artworks related to it</p>
     <label>Topic:</label>
     <input type="text" />
     <Button>Search</Button>

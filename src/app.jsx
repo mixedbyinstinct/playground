@@ -86,6 +86,9 @@ border: 0.8px inset #fffcf7;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
 }
+height: 100vh;
+width: 100vw;
+filter: drop-shadow(2px 2px 8px #001a17);
 & p {
     text-align: center;
 }

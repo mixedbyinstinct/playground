@@ -86,6 +86,7 @@ margin-top: 15vh;
 }
 & p {
     text-align: center;
+    animation: fadeIn 1s;
 }
 `;
 
@@ -101,12 +102,26 @@ text-align: center;
 padding: 8px;
 `;
 
+const MessageBox = styled.header`
+background-color: #0ba68b;
+color: #000d0c;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+& h1 {
+  font-family: 'heading';
+  font-size: 24px;
+  animation: rotateIn 2s;
+}
+animation: rotateInDownLeft 1.5s;
+box-shadow: 0 0 5px inset #e7f6f3;
+`;
+
 const App = () => {
-    const [vid, setVid] = useState('');
+    const [what, setWhat] = useState('');
     const [show, setShow] = useState(false);
     function go() {
-        axios.get("https://api.nasa.gov/planetary/apod?api-key=OS1bLo2XfPyR3ysfMWIhtpCrLDVdO3uuHK3UHO5M").then(({data}) => {
-             setVid(data.url);
+        axios.get("http://boredapi.com/api/activity").then(({data}) => {
+             setWhat(data.activity);
              setShow(true);
         });
     }
@@ -114,12 +129,16 @@ const App = () => {
     <>
     <GlobalStyles />
     <Jumbotron>
-        <h1>NASA shit</h1>
+        <h1>Find Sum To Do</h1>
     </Jumbotron>
     <Container>
-    <p>get some NASA shit</p>
-    <Button onClick={go}>Search</Button>
-    {show ? <><p>here:</p> <video src={vid} controls /></> : <div />}
+    <p>Ask the Bored API what to ddo</p>
+    <Button onClick={go}>Yallah</Button>
+    {show ? <>
+    <p>you should</p>
+    <MessageBox>
+      <h1>{what}</h1>
+      </MessageBox></> : <div />}
     </Container>
     </>
   );

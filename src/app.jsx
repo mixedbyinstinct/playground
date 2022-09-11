@@ -84,7 +84,6 @@ margin-top: 15vh;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
 }
-box-shadow: 0 0 8px inset #191712;
 & p {
     text-align: center;
 }

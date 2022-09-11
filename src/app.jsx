@@ -77,10 +77,13 @@ justify-content: center;
   height: 32px;
   color: #000d0c;
   border-radius: 6px;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
+}
+& p {
+    margin-top: 5vh;
 }
 `;
 

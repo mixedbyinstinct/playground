@@ -108,8 +108,8 @@ color: #000d0c;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 padding: 15px;
-height: 100px;
-width: 40vw;
+height: 400px;
+width: 75vw;
 & h1 {
   font-family: 'heading';
   font-size: 24px;

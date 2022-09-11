@@ -86,6 +86,9 @@ border: 0.8px inset #fffcf7;
   border: none;
   filter: drop-shadow(0 2px 4px #001a17);
 }
+& p {
+    text-align: center;
+}
 `;
 
 const Button = styled.button`

@@ -120,8 +120,8 @@ const App = () => {
     const [what, setWhat] = useState('');
     const [show, setShow] = useState(false);
     function go() {
-        axios.get("http://boredapi.com/api/activity").then(({data}) => {
-             setWhat(data);
+        axios.get("http://www.boredapi.com/api/activity").then(({data}) => {
+             setWhat(data.activity);
              setShow(true);
         });
     }

@@ -12,4 +12,4 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirnams, 'build', 'index.html'));
 })
 
-app.listen(PORT, () => console.log('server started at port ' + PORT)),
+app.listen(PORT, () => console.log('server started at port ' + PORT));
